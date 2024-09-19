@@ -27,12 +27,6 @@ public class AdminController {
         return "admin";
     }
 
-    @GetMapping("/find")
-    @ResponseBody
-    public User find(@RequestParam Long id) {
-        return userService.getUserById(id);
-    }
-
     @PostMapping("/save")
     public String saveUser(User user) {
         userService.saveUser(user);

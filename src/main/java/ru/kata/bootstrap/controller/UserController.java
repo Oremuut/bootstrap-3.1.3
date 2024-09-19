@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import ru.kata.bootstrap.models.User;
 
 @Controller
-@RequestMapping("/user")
+@RequestMapping({"/","/user"})
 public class UserController {
 
     @GetMapping
